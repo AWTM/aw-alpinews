@@ -1,0 +1,85 @@
+/**
+* Print stylesheet for AW News article
+* @version         1.0
+* @lastmodified    03.01.2022
+*/
+@media print {
+
+  body {
+      margin: 0;
+      color: #000000;
+      background-color: #FFFFFF;
+    }
+
+  .d-flex {display: block;}
+
+  #header.bg-aw {
+      background-color: #FFFFFF !important;
+    }
+
+  #header.bg-aw h1,
+  #header.bg-aw p {
+      color: #000000 !important;
+    }
+
+  .autohide {
+    position: relative;
+    display: block;
+    top: 0px;
+  }
+
+  .scrolled-down {
+    transform: none;
+    opacity: 1;
+  }
+
+  #hero {
+    padding-top: 0px;
+    margin-top: 0px;
+    height: auto;
+  }
+
+  #hero .container {
+    position: relative;
+    padding-top: 0px;
+    text-align: center;
+  }
+
+  #hero:before {
+    display: none;
+  }
+
+  #hero h1 {
+    font-size: 32pt;
+    color: #000000;
+  }
+
+  #hero h2 {
+    color: #000000;
+  }
+
+  p,
+  p.text-muted
+   {
+    color: #000000 !important;
+    font-size: 12pt;}
+
+  .no-print {
+    display: none;
+  }
+
+  .print {display: block !important;}
+
+  .badge,
+  .badge span {
+    background-color: #FFFFFF !important;
+    color: #000000;
+  }
+
+  figure {display: none !important;}
+
+  footer {
+    display: none;
+  }
+
+}
